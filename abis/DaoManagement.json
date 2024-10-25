@@ -1,0 +1,117 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "proposal",
+				"type": "address"
+			}
+		],
+		"name": "proposalCreated",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "councilAddress",
+						"type": "address"
+					}
+				],
+				"internalType": "struct IDAO.GovernanceTokenParams",
+				"name": "_GovernanceTokenParams",
+				"type": "tuple"
+			}
+		],
+		"name": "createGovernanceToken",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_daoAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_description",
+				"type": "string"
+			},
+			{
+				"internalType": "uint32",
+				"name": "_startTime",
+				"type": "uint32"
+			},
+			{
+				"internalType": "uint32",
+				"name": "_duration",
+				"type": "uint32"
+			},
+			{
+				"internalType": "uint8",
+				"name": "actionId",
+				"type": "uint8"
+			},
+			{
+				"components": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"internalType": "struct IProposal.Action[]",
+				"name": "_actions",
+				"type": "tuple[]"
+			}
+		],
+		"name": "createProposal",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
